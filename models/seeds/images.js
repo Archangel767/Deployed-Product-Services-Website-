@@ -18,7 +18,7 @@ module.exports = [{
         name: '',
         description: '',
         imgSrc: 'https://pixabay.com/photos/india-food-indian-meal-2731817/',
-        country: India,
+        country: 'India',
         width: '',
         height: '',
     },
