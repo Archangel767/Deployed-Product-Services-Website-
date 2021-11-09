@@ -27,7 +27,7 @@
 
 ## James
 
-- HTMl and CSS Styling
+- HTMl and CSS styling
 - Responsive Design
 - Schema/model implementation
 - JSON endpoints
@@ -35,5 +35,11 @@
 ## Jean Marc
 - Heroku / Moongoose
 - JSON endpoints
-- Schema/model implementatio
+- Schema/model implementation
 - Fancy Feature - credit payment system
+
+## Hayden Beck
+- HTML and CSS Styling
+- Frontend Javascript
+- Create JSON endpoints
+- Schema/model implementation
