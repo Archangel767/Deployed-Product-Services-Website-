@@ -38,6 +38,12 @@
 - Schema/model implementatio
 - Fancy Feature - credit payment system
 
+## Hayden Beck
+- HTML and CSS Styling
+- Frontend Javascript
+- Create JSON endpoints
+- Schema/model implementation
+
 
 
 ## Images:
