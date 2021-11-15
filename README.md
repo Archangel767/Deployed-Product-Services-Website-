@@ -47,7 +47,7 @@
 
 
 
-## Images:
+## Images/Attibutions:
 1. Photo by [Robert Owen-Wahl](https://pixabay.com/photos/hamburger-burger-barbeque-bbq-beef-1238246/) - hamburger / American food
 
 2. Photo by [Bruno Marques Designer](https://pixabay.com/photos/pizza-italian-pasta-food-cheese-5179939/) - pizza / Italian food
@@ -67,3 +67,10 @@
 9. Photo by  [English](https://pixabay.com/photos/nachos-chips-food-mexican-plate-4454941/) - tacos / Mexican food
 
 10. Photo by  [Gilmar Koizumi](https://pixabay.com/photos/bean-stew-black-beans-beans-bacon-5181831/) - feijoada / Brazilian food
+    
+11. Photo By [Audrey Mari](https://unsplash.com/photos/HvhinFxq4_s)
+    
+12. Index.html template from tailwind toolbox. [Template](https://www.tailwindtoolbox.com/templates/nordic-store)
+
+13. SVG logo from SVGrepo. [Logo](https://www.svgrepo.com/svg/310867/food)
+    
