@@ -137,18 +137,7 @@ app.get('/subscriber/:name', (req, res) => {
   });
 })
 
-
-// app.post('/subscriber', function(request, response){
-//   const subscriber = new Subscriber(req.body);
-
-//   subscriber.save(function(error, data){
-//     if(error){
-//       res.send('Problem submitting form. please try again.');
-//     }
-//     res.send('Subscriber created!');
-//   })
-// });
-
+// 
 app.post('/subscriber', async (req, res) => {
 
   try {
@@ -168,7 +157,3 @@ app.post('/subscriber', async (req, res) => {
 })
 
 module.exports = app
-
-
-
-
