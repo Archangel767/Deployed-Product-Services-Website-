@@ -1,85 +1,176 @@
-/* Define data array */
+const express = require('express');
+const app = express()
 
-const intFood = [{
-        name: 'Hamburger',
-        description: 'bread, beef, cheese, salad, ketchup',
-        country: 'USA',
-        imgSrc: 'https://pixabay.com/photos/hamburger-burger-barbeque-bbq-beef-1238246/',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Pizza',
-        description: 'dough, tomato sauce, cheese, olives',
-        country: 'Italy',
-        imgSrc: 'https://pixabay.com/photos/pizza-italian-pasta-food-cheese-5179939/',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Tandoori',
-        description: 'meats, breads and vegetables',
-        imgSrc: 'https://pixabay.com/photos/india-food-indian-meal-2731817/',
-        country: 'India',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Sushi',
-        description: 'vinegared rice, seafood and vegetables',
-        country: 'Japan',
-        imgSrc: 'https://pixabay.com/photos/tuna-salmon-japan-seafood-fish-1957234/',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Dumplings',
-        description: 'flour, potatoes or bread',
-        country: 'Taiwan',
-        imgSrc: 'https://pixabay.com/photos/dumpling-taiwan-tasty-2392893/',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Paella',
-        description: 'white rice, shrimp and saffron',
-        country: 'Spain',
-        imgSrc: 'https://pixabay.com/photos/seafood-paella-paella-seafood-spain-6280045/',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Greek Salad',
-        description: 'tomatoes, cucumbers, onions',
-        country: 'Greece',
-        imgSrc: 'https://pixabay.com/photos/food-plate-greek-salad-caprese-3337621/',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Fried Pork',
-        description: 'thick pork chops, salt and pepper',
-        country: 'Korea',
-        imgSrc: 'https://pixabay.com/photos/pork-meat-fried-korean-food-dinner-1582916/',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Tacos',
-        description: 'flour tortillas, chili powder, skirt steak in pieces',
-        country: 'Mexico',
-        imgSrc: 'https://pixabay.com/photos/nachos-chips-food-mexican-plate-4454941/',
-        width: '300',
-        height: '300',
-    },
-    {
-        name: 'Feijoada',
-        description: ' black beans, beacon and sausages ',
-        country: 'Brazil',
-        imgSrc: 'https://pixabay.com/photos/bean-stew-black-beans-beans-bacon-5181831/',
-        width: '300',
-        height: '300',
-    },
-]
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-module.exports = intFood
+const Image = require('../models/image');
+const Member = require('../models/member');
+const Subscriber = require('../models/subscriber');
+
+// Image Entry route
+
+app.get('/gallery', (req, res) => {
+  let image = null
+  Image.find((err, data) => {
+    if (err) {
+      console.log(err)
+      res.sendStatus(404);
+    }
+    else {
+      image = data
+      console.log(data)
+      if (typeof image !== 'undefined' && Array.isArray(image)) {
+        res.send(image)
+      } else {
+        res.status(404)
+        res.send({ error: 'File Not Found' })
+      }
+    }
+  })
+})
+
+// Image Item Route:
+
+app.get('/gallery/:name', (req, res) => {
+  let image
+  Image.findOne({ name: req.params.name }, function (err, data) {
+    if (err) {
+      console.log(err)
+      res.sendStatus(404);
+    } else {
+      image = data
+      console.log(image)
+      if (typeof image === 'object' && image !== null) {
+        res.send(image)
+      } else {
+        res.status(404)
+        res.send({ error: 'File Not Found' })
+      }
+    }
+  });
+})
+
+// Member Entry route
+
+app.get('/member', (req, res) => {
+  let member = null
+  Member.find((err, data) => {
+    if (err) {
+      console.log(err)
+      res.sendStatus(404);
+    }
+    else {
+      member = data
+      console.log(data)
+      if (typeof member !== 'undefined' && Array.isArray(member)) {
+        res.send(member)
+      } else {
+        res.status(404)
+        res.send({ error: 'File Not Found' })
+      }
+    }
+  })
+})
+
+// Member Item Route:
+
+app.get('/member/:name', (req, res) => {
+  let member
+  Member.findOne({ name: req.params.name }, function (err, data) {
+    if (err) {
+      console.log(err)
+      res.sendStatus(404);
+    } else {
+      member = data
+      console.log(member)
+      if (typeof member === 'object' && member !== null) {
+        res.send(member)
+      } else {
+        res.status(404)
+        res.send({ error: 'File Not Found' })
+      }
+    }
+  });
+})
+
+
+
+// Subscriber Entry route
+
+app.get('/subscriber', (req, res) => {
+  let subscriber = null
+  Subscriber.find((err, data) => {
+    if (err) {
+      console.log(err)
+      res.sendStatus(404);
+    }
+    else {
+      subscriber = data
+      console.log(data)
+      if (typeof subscriber !== 'undefined' && Array.isArray(subscriber)) {
+        res.send(subscriber)
+      } else {
+        res.status(404)
+        res.send({ error: 'File Not Found' })
+      }
+    }
+  })
+})
+
+// Subscriber Item Route:
+
+app.get('/subscriber/:name', (req, res) => {
+  let subscriber
+  Subscriber.findOne({ name: req.params.name }, function (err, data) {
+    if (err) {
+      console.log(err)
+      res.sendStatus(404);
+    } else {
+      subscriber = data
+      console.log(subscriber)
+      if (typeof subscriber === 'object' && subscriber !== null) {
+        res.send(subscriber)
+      } else {
+        res.status(404)
+        res.send({ error: 'File Not Found' })
+      }
+    }
+  });
+})
+
+
+// app.post('/subscriber', function(request, response){
+//   const subscriber = new Subscriber(req.body);
+
+//   subscriber.save(function(error, data){
+//     if(error){
+//       res.send('Problem submitting form. please try again.');
+//     }
+//     res.send('Subscriber created!');
+//   })
+// });
+
+app.post('/subscriber', async (req, res) => {
+
+  try {
+    const subscriber = new Subscriber(req.body)
+  
+    await subscriber.save()
+  
+    console.log(subscriber)
+    res.send('Subscriber created!')
+
+  } catch(err) {
+
+    console.log(err)
+    res.send('Problem submitting form. please try again.')
+    
+  }
+})
+
+module.exports = app
+
+
+
+

@@ -1,14 +1,16 @@
 
+// Required modules to import
+require('dotenv').config()
+
 const express = require('express')
 const app = express()
 
-
-// List API entry route:
-
+const mongoose = require('./public/db')
 
 
-// List API item route:
 
+const router = require('./routes/api')
+app.use('/api', router)
 
 
 

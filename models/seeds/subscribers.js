@@ -1,4 +1,5 @@
-const subscribers = [{
+module.exports = [
+    {
         name: 'John',
         email: "john@iwsu.com.br",
     },
