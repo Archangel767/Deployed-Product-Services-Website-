@@ -1,0 +1,37 @@
+.cards{
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-family: sans-serif;
+}
+.card{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.card_image{
+  width: 100%;
+  display: block;
+}
+.card_content{
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+}
+.card_content > p:first-of-type{
+  margin-top: 0;
+
+}
+.card_content > p:last-of-type{
+  margin-top: 0;
+  
+}
+.card_info{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background: #eeeeee;
+  font-size: 0.8em;
+  border-bottom: 2px solid #cccccc;
+}
