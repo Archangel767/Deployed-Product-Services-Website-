@@ -5,6 +5,7 @@
   - [Mysia](https://github.com/Mysia14)
   - [James](https://github.com/Archangel767)
   - [Jean Marc](https://github.com/QDetectiveP)
+  - [Hayden](https://github.com/Haydenbeck-22)
   
 - GitHub Links:
   - [GH repo](https://github.com/Archangel767/cpnt262-final)
