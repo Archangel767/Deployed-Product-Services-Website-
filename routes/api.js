@@ -94,8 +94,6 @@ app.get('/member/:name', (req, res) => {
   });
 })
 
-
-
 // Subscriber Entry route
 
 app.get('/subscriber', (req, res) => {

@@ -7,8 +7,8 @@
   - [Jean Marc](https://github.com/QDetectiveP)
   
 - GitHub Links:
-  - [GH repo](https://github.com/)
-  - [Deployed Heroku URL](https://.herokuapp.com/)
+  - [GH repo](https://github.com/Archangel767/cpnt262-final)
+  - [Deployed Heroku URL](https://cpnt262-final-intfood.herokuapp.com/)
 
 ## Fancy Feature - Credit payment system
 
