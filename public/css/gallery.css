@@ -34,7 +34,6 @@
                 .card_info {
                     padding: 15px;
                     display: flex;
-                    grid-column: auto;
                     justify-content: space-between;
                     background: #dda775;
                     font-size: 0.8em;

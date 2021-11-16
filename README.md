@@ -1,5 +1,5 @@
 # CPNT 262 Final Project - Deployed Product/Services Website
-# International Foods ****
+# International Foods 
 
 - Contributors:
   - [Mysia](https://github.com/Mysia14)
