@@ -9,7 +9,7 @@ const mongoose = require('./public/db')
 
 const routes = require('./routes/api')
 app.use('/api', routes)
-
+const uri=proces.env.MONGODB_URL
 
 
 
