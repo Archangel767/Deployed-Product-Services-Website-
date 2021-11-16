@@ -157,7 +157,7 @@ app.post('/subscriber', async (req, res) => {
 })
 
 module.exports = app
-=======
+
 /* Define data array */
 
 const intFood = [
