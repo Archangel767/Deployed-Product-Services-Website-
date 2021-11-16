@@ -13,10 +13,17 @@ module.exports = [{
         github: 'https://github.com/QDetective'
     },
     {
-        name: '',
-        profilePic: '',
-        title: '',
-        bio: '',
-        github: ''
+        name: 'Hayden',
+        profilePic: './images/avatars/hayden.jpeg',
+        title: 'Senior StackOverflow skimmer',
+        bio: 'Google is a devtool, right?',
+        github: 'https://github.com/Haydenbeck-22'
+    },
+    {
+        name: 'Mysia',
+        profilePic: './images/avatars/Mysia.jpeg',
+        title: 'Tech Girl',
+        bio: 'Getting crazy and nerd',
+        github: 'https://github.com/Mysia14'
     }
 ];
