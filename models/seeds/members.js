@@ -3,7 +3,7 @@ module.exports = [
   name: 'James',
   profilePic: '/images/avatars/james.jpg',
   title: 'Kraft Dinner Connoisseur',
-  bio: 'My melted brain will keep me warm this winter',
+  bio: 'I have no idea how to take a profile pic',
   github: 'https://github.com/Archangel767'
   },
   {
