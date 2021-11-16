@@ -7,9 +7,9 @@ module.exports = [{
     },
     {
         name: 'Jean-Marc',
-        profilePic: '',
-        title: 'Procrastinator Level: Extreme',
-        bio: 'Why did I leave things to the last minute?',
+        profilePic: '/images/avatars/Jean-Marc.jpg',
+        title: 'Unfortunate Procrastinator',
+        bio: 'I am so screwed.',
         github: 'https://github.com/QDetective'
     },
     {
