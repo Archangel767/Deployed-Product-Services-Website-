@@ -9,6 +9,7 @@ const mongoose = require('./public/db')
 
 const routes = require('./routes/api')
 app.use('/api', routes)
+
 app.use(express.static('public'))
 
 
