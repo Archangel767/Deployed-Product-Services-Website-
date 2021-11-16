@@ -1,5 +1,5 @@
 # CPNT 262 Final Project - Deployed Product/Services Website
-# International Foods ****
+# International Foods 
 
 - Contributors:
   - [Mysia](https://github.com/Mysia14)
@@ -29,6 +29,7 @@
 ## James
 
 - HTMl and CSS Styling
+- Heroku/Mongoose coding
 - Responsive Design
 - Schema/model implementation
 - JSON endpoints
