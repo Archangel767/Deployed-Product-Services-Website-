@@ -29,6 +29,7 @@
 ## James
 
 - HTMl and CSS Styling
+- Heroku/Mongoose coding
 - Responsive Design
 - Schema/model implementation
 - JSON endpoints
