@@ -147,7 +147,7 @@ app.post('/subscriber', async (req, res) => {
   
     console.log(subscriber)
     res.send('Subscriber created!')
-
+    
   } catch(err) {
 
     console.log(err)
