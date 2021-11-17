@@ -11,8 +11,8 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         item.forEach((member) => {
             output +=
                 `<figure>
-                <h2 class="title">${member.fullName}</h2>
-                <img src="${member.profilePic}" alt="${member.description}"></img>
+                <h2 class="title">${member.name}</h2>
+                <img src="${member.profilePic}" alt="${member.title}"></img>
                 <figcaption>
                     <p>${member.bio}</p>
                     <a class="author" href="${member.github}"></a>
