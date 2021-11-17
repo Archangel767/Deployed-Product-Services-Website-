@@ -13,17 +13,18 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
 
 for (let i = 0; i < Number(data.length); i++) {
     output += `
-        <div>
-            <figure>
-                <h2 class="name">${data[i].name}</h2>
-                <img src="${public\images\avatars\${data[i].profilePic}" alt="">$</img>
-                <figcaption><p>${data[i].bio}</p>
-                    <a href="${data[i].github}" target="_blank">Github Link</a>
-                </figcaption>
-            </figure>
-            </div>
+            <div>
+                <figure>
+                    <h2 class="name">${data[i].name}</h2>
+                    <img src="${public\images\avatars\${data[i].profilePic}" alt="">$</img>
+                    <figcaption><p>${data[i].bio}</p>
+                        <a href="${data[i].github}" target="_blank">Github Link</a>
+                    </figcaption>
+                </figure>
+                </div>
             `
 })
+
 console.log(output)
 const team = document.querySelector('.team')
 team.innerHTML = output
