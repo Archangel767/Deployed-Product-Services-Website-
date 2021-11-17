@@ -5,4 +5,4 @@ const subscriberSchema = mongoose.Schema({
     email: String,
 });
 
-module.exports = mongoose.model('Subscriber', subscriberSchema);
+module.exports = mongoose.models('Subscriber', subscriberSchema);
