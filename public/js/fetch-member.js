@@ -17,7 +17,7 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         for (let i = 0; i < Number(data.length); i++) {
             output += `
         <figure>
-          <img src="/images/avatars/${data[i].profilePic}">
+          <img src="/images/avatars/${data[i].profilePic}" alt="${data[i].name}" width="300">
           <figcaption>${data[i].name}</figcaption>
         </figure>
         <p>${data[i].title}</p>
@@ -25,8 +25,9 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         <a href="${data[i].github}" target="_blank">Github Link</a>
       `
         }
-
         console.log(output)
         document.querySelector('section').innerHTML = output;
     })
-    .catch(function(err) {})
+    .catch(function(err) {
+
+    })
