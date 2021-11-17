@@ -12,25 +12,28 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         return response.json();
     })
     .then(function(data) {
-            console.log(data)
+        console.log(data)
 
-            for (let i = 0; i < Number(data.length); i++) {
-                output += `
+        for (let i = 0; i < Number(data.length); i++) {
+            output += `
             <div>
-                <figure>
-                    <h2 class="name">${data[i].name}</h2>
-                    <img src="${public\images\avatars\${data[i].profilePic}" alt="">$</img>
-                    <figcaption><p>${data[i].bio}</p>
-                        <a href="${data[i].github}" target="_blank">Github Link</a>
-                    </figcaption>
-                </figure>
-                </div>
-            `
-            })
+        <figure>
+          <img src="assets/images/team-pics/${data[i].profilePic}">
+          <figcaption>${data[i].fullName}</figcaption>
+        </figure>
+      <p>${data[i].bio}</p>
+        <div class="icon">
+          <img src="assets/icons/github.png">
+          <a href="${data[i].github}" target="_blank">
+          ${data[i].username}</a>
+        </div>
+      </div>
+      `
+        }
 
         console.log(output) document.querySelector('section').innerHTML = output;
     })
-.catch(function(err) {
-    //console.log(err);
+    .catch(function(err) {
+        //console.log(err);
 
-})
+    })
