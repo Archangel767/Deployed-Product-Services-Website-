@@ -8,4 +8,4 @@ const teamSchema = mongoose.Schema({
     github: String,
 });
 
-module.exports = mongoose.models('Team', teamSchema);
+module.exports = mongoose.model('Team', teamSchema);

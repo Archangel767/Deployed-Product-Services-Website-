@@ -9,4 +9,4 @@ const foodSchema = mongoose.Schema({
     height: Number,
 });
 
-module.exports = mongoose.models('Food', foodSchema);
+module.exports = mongoose.model('Food', foodSchema);
