@@ -1,5 +1,5 @@
 'use strict';
-const strict = "Strict Mode Script"
+const strict = "Strict Mode Script";
 
 let output = '';
 
@@ -16,21 +16,17 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
 
         for (let i = 0; i < Number(data.length); i++) {
             output += `
-            <div>
         <figure>
           <img src="/images/avatars/${data[i].profilePic}">
           <figcaption>${data[i].name}</figcaption>
         </figure>
-        <p>${data[i].title</p>
+        <p>${data[i].title}</p>
         <p>${data[i].bio}</p>
-          <a href="${data[i].github}" target="_blank">Github Link</a>
-      </div>
+        <a href="${data[i].github}" target="_blank">Github Link</a>
       `
         }
 
-        console.log(output) document.querySelector('section').innerHTML = output;
+        console.log(output)
+        document.querySelector('section').innerHTML = output;
     })
-    .catch(function(err) {
-        //console.log(err);
-
-    })
+    .catch(function(err) {})
