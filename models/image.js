@@ -7,6 +7,7 @@ const foodSchema = mongoose.Schema({
     imgSrc: String,
     width: Number,
     height: Number,
+    cost: Number,
 });
 
 module.exports = mongoose.model('Food', foodSchema);
