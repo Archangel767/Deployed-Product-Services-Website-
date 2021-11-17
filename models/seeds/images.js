@@ -5,6 +5,7 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/hamburger-burger-barbeque-bbq-beef-1238246/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Pizza',
@@ -13,6 +14,7 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/pizza-italian-pasta-food-cheese-5179939/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Tandoori',
@@ -21,6 +23,7 @@ module.exports = [{
         country: 'India',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Sushi',
@@ -29,6 +32,7 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/tuna-salmon-japan-seafood-fish-1957234/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Dumplings',
@@ -37,6 +41,7 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/dumpling-taiwan-tasty-2392893/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Paella',
@@ -45,6 +50,7 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/seafood-paella-paella-seafood-spain-6280045/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Greek Salad',
@@ -53,6 +59,7 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/food-plate-greek-salad-caprese-3337621/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Fried Pork',
@@ -61,6 +68,7 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/pork-meat-fried-korean-food-dinner-1582916/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Tacos',
@@ -69,6 +77,7 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/nachos-chips-food-mexican-plate-4454941/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
     {
         name: 'Feijoada',
@@ -77,5 +86,6 @@ module.exports = [{
         imgSrc: 'https://pixabay.com/photos/bean-stew-black-beans-beans-bacon-5181831/',
         width: '300',
         height: '300',
+        cost: '9.99',
     },
 ]
