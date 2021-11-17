@@ -26,6 +26,9 @@ for (let i = 0; i < Number(data.length); i++) {
 })
 
 console.log(output)
-const team = document.querySelector('.team')
-team.innerHTML = output
+document.querySelector('section').innerHTML = output;
+})
+.catch(function(err) {
+    //console.log(err);
+
 })
