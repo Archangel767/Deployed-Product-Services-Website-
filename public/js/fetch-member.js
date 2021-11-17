@@ -5,7 +5,7 @@ let output = '';
 
 fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
     .then(function(response) {
-        // Fetch JSON file from mongodb server to convert to JS object asynchronously.
+        // Fetch JSON file from mongodb server to convert to JS object.
         if (!response.ok) {
             throw new Error('Not 200 OK');
         }
@@ -16,6 +16,10 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
 
         for (let i = 0; i < Number(data.length); i++) {
             output += `
+        <div class="container">
+            <div class="row">
+                <div class="col">
+        <div class="card" style="width:20rem;">
         <figure>
           <img src="/images/avatars/${data[i].profilePic}" alt="${data[i].name}" width="300" height="400">
           <figcaption>${data[i].name}</figcaption>
@@ -23,7 +27,14 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         <p>${data[i].title}</p>
         <p>${data[i].bio}</p>
         <a href="${data[i].github}" target="_blank">Github Link</a>
-      `
+        </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card" style="width:20rem;">
+        </div>
+        </div>
+        `
         }
         console.log(output)
         document.querySelector('section').innerHTML = output;
