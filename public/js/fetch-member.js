@@ -19,10 +19,12 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         <div class="gallery-item">
         <img class="gallery-image" src="/images/avatars/${data[i].profilePic}" alt="${data[i].name}" style="width: 300px;height: 300px;">
         <br>
-        <><strong>Name:</strong>${data[i].name}<br>
-        <strong>Job:</strong>${data[i].title}<br>
-        <strong>Bio:</strong>${data[i].bio}<br>
-        <a href="${data[i].github}" target="_blank">Github Link</a></p>
+        <p><b>Name:</b>${data[i].name}<br>
+        <b>Job:</b>${data[i].title}<br>
+        <b>Bio:</b>${data[i].bio}<br>
+        <a href="${data[i].github}" target="_blank">Github Link</a>
+        <br>
+        </p>
         </div>
         `
         }
