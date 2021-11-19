@@ -15,4 +15,9 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/image')
             console.log(data)
         }
 
-        for
+        function incrementValue() {
+            var value = parseInt(document.getElementById('total-count').value, 10);
+            value++;
+            document.getElementById('total-count').value = value;
+
+        }
