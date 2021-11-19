@@ -18,10 +18,11 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
             output += `
         <div class="gallery-item">
         <img class="gallery-image" src="/images/avatars/${data[i].profilePic}" alt="${data[i].name}" style="width: 300px;height: 300px;">
-        <figcaption><strong>Name:</strong>${data[i].name}</figcaption>
+        <figcaption><strong>Name:</strong>${data[i].name}
         <p><b>Job:</b>${data[i].title}</p>
         <p><b>Bio:</b>${data[i].bio}</p>
         <a href="${data[i].github}" target="_blank">Github Link</a>
+        </figcaption>
         </div>
         `
         }
