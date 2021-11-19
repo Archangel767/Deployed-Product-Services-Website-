@@ -17,7 +17,7 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         for (let i = 0; i < Number(data.length); i++) {
             output += `
         <div class="gallery-item">
-        <img class="gallery-image" src="/images/avatars/${data[i].profilePic}" alt="${data[i].name}" style="width: 300px;height: 300px;">
+        <img class="gallery-image" src="/images/avatars/${data[i].profilePic}" alt="${data[i].name}" style="width: 300px;height: 300px;"></img>
         <figcaption><strong>Name:</strong>${data[i].name}
         <b>Job:</b>${data[i].title}
         <b>Bio:</b>${data[i].bio}
