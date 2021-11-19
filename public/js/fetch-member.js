@@ -22,8 +22,8 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         <figcaption>
         </figure>
         <strong>Name:</strong>${data[i].name}
-        <p><b>Job:</b>${data[i].title}</p>
-        <p></p><b>Bio:</b>${data[i].bio}</p>
+        <b>Job:</b>${data[i].title}
+        <p><b>Bio:</b>${data[i].bio}</p>
         <a href="${data[i].github}" target="_blank">Github Link</a>
         </figcaption>
         </div>
