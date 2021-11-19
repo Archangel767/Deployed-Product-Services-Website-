@@ -1,5 +1,6 @@
 .nav {
     display: flex;
+    font-size: medium;
     list-style-type: none;
     gap: 20px;
     justify-content: center;
@@ -12,7 +13,7 @@
     text-decoration: none;
     color: white;
     border-radius: 10px;
-    background-color: #363636;
+    background-color: #dda775;
     padding: 5px;
 }
 
@@ -22,15 +23,80 @@
     transition: all 0.3s ease 0s;
 }
 
-.card {
-    text-align: center;
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f5e6d8;
 }
 
 .container {
-    align-items: center;
+    max-width: 500rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
 }
 
-h1 {
-    font-size: 5rem;
+.heading {
+    font-family: "Work-sans", sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.5;
     text-align: center;
+    padding: 3.5rem 0;
+    color: #1a1a1a;
+}
+
+.heading span {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.gallery-item {
+    flex: 1 0 24rem;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px black;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+}
+
+p {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    margin: 30px;
+}
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-gap: 2rem;
+    }
+    .gallery,
+    .gallery-item {
+        margin: 0;
+    }
 }

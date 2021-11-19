@@ -5,10 +5,10 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Work-sans", sans-serif;
     font-size: 1em;
     line-height: 1.5;
-    background: #3c86e7;
+    background: #f5e6d8;
     color: rgb(3, 57, 66);
 }
 
@@ -87,7 +87,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: rgb(35, 150, 226);
+    background: rgb(240, 70, 18);
 }
 
 label {
@@ -104,7 +104,7 @@ input:focus~label {
 }
 
 input.error {
-    border-right: 0.5em solid #3ce7de;
+    border-right: 0.5em solid #f8b02a;
 }
 
 .error+label {
