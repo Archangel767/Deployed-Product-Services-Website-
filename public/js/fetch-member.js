@@ -24,8 +24,8 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         <b>Job:</b>${data[i].title}<br>
         <b>Bio:</b>${data[i].bio}<br>
         <a href="${data[i].github}" target="_blank">Github Link</a>
-        </figure>
         </p>
+        </figure>
         </div>
         `
         }
