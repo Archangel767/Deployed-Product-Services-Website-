@@ -23,7 +23,7 @@ fetch('https://cpnt262-final-intfood.herokuapp.com/api/member')
         <p><b>Bio:</b>${data[i].bio}</p>
         <a href="${data[i].github}" target="_blank">Github Link</a>
         </div>
-           `
+        `
         }
         console.log(output)
         document.querySelector('section').innerHTML = output;
